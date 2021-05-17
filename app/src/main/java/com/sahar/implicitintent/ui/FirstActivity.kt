@@ -18,7 +18,7 @@ class FirstActivity : BaseActivity<ActivityFirstBinding>() {
 
         binding?.apply {
             button.setOnClickListener{
-                val intent = Intent(Intent.ACTION_VIEW)
+                val intent = Intent(Intent.ACTION_SEND)
                 intent.putExtra(Constant.extraName, textView.text)
                 startActivity(intent)
             }
